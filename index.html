@@ -227,12 +227,13 @@
       margin: 4px 0;
     }
 
-    .hero-card .card-info .price {
-      font-size: 20px;
-      font-weight: 700;
-      color: #10b981;
-      margin: 6px 0;
-    }
+  .hero-card .card-info .price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #10b981;
+  margin: 6px 0;
+}
+
 
     .hero-card .card-info .stats {
       font-size: 13px;
@@ -472,7 +473,7 @@
       overflow: hidden;
       margin: 0 auto 10px;
       border: 3px solid transparent;
-      background: linear-gradient(135deg, #6366f1, #a855f7, #22c55e);
+      background: linear-gradient(135deg, #696979, #8b8b8b, #555555);
       padding: 3px;
     }
 
@@ -1018,6 +1019,53 @@
       /* pink-500 */
       font-weight: 600;
     }
+    @media (max-width: 768px) {
+  .hero-wrap {
+    grid-template-columns: 1fr; /* stack vertically */
+    text-align: center;
+    gap: 24px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .hero-card .card-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .hero-card .card-info h4 {
+    font-size: 16px;
+  }
+
+  .hero-card .stats {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+}
+
   </style>
 </head>
 
@@ -1041,40 +1089,42 @@
 
   <!-- Hero -->
   <!-- Hero -->
-  <section class="hero" id="explore">
-    <div class="container hero-wrap">
-      <!-- Left side -->
-      <div class="hero-text">
-        <h1>
-          <span class="highlight-blue">Presenting</span> You All <br>
-          The <span class="highlight-black">Work Of</span>
-          <span class="highlight-green">Deepak</span>
-        </h1>
-        <p>I am a Student and I built websites using AI. I learn first and then use it to take my imagination into the
-          real world.</p>
-        <div class="hero-btns">
-          <a class="btn-primary" href="#students">Explore</a>
-          <a class="btn-light" href="#card">Contact</a>
-        </div>
+  <!-- Hero -->
+<section class="hero" id="explore">
+  <div class="container hero-wrap">
+    
+    <!-- Left side -->
+    <div class="hero-text">
+      <h1>
+        <span class="highlight-blue">Welcome to</span> <br>
+        The <span class="highlight-green">Journey</span> of <br>
+        <span class="highlight-black">Class XII</span>
+      </h1>
+      <p>We are not just classmates – we are a family. Explore our students, memories, and moments that made us who we are.</p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="#students">Meet Students</a>
+        <a class="btn-light" href="#memories">See Memories</a>
       </div>
+    </div>
 
-      <!-- Right side -->
-      <div class="hero-card">
-        <div class="card-img">
-          <img src="image\hero.png" alt="Deepak Avatar">
-        </div>
-        <div class="card-info">
-          <h4>Patel Deepak Kumar</h4>
-          <p class="small">Drako Working Since 2023</p>
-          <div class="price">₹300</div>
-          <div class="stats">
-            <span>❤️ 45</span>
-            <span>Last Done: ₹150</span>
-          </div>
+    <!-- Right side -->
+    <div class="hero-card">
+      <div class="card-img">
+        <img src="image/hero.png" alt="Class Icon">
+      </div>
+      <div class="card-info">
+        <h4>Class XII (2025–26)</h4>
+        <p class="small">Patel Deepak & Friends</p>
+        <div class="stats">
+          <span>🎓 12 Students</span>
+          <span>⭐ 5+ Projects</span>
+          <span>📸 500+ Memories</span>
         </div>
       </div>
     </div>
-  </section>
+
+  </div>
+</section>
 
 
   <!-- About -->
@@ -1131,7 +1181,7 @@
         <div class="card">
           <div class="avatar"><img src="image\ayush.png" alt=""></div>
           <div class="name">Ayush Sharma</div>
-          <div class="aka">aka Vikki <span class="chip">Class Topper</span></div>
+          <div class="aka">aka Vikki <span class="chip">School Captain</span></div>
           <div class="desc">Smart, topper in Math, honest about marks, funny in CS room.</div>
           <div class="tags">
             <span class="tag">Leader</span>
